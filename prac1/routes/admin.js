@@ -8,7 +8,8 @@ router.get('/add-product', (req, res, next) => {
 });
 
 router.post('/add-product', (req, res, next) => {
-  product.push({title: req.body.title})
+  console.log('this is post!!');
+  console.log(req.body);
   res.redirect('/');
 });
 
